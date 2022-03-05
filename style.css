@@ -17,29 +17,88 @@ body {
     margin: 10vh auto;
     border-radius: 50%;
     position: relative;
+    border: 0.3rem solid black;
     /* padding-top: 48%; */
 }
 
 #hour_hand{
-    width: 45%;
-    margin-left: 5%;
-    height: 0.3rem;
-    background-color: red;
     position: absolute;
-    top: 49%;
+    bottom: 50%;
+    left: 50%;
+    width: 0.3rem;
+    height: 40%;
+    transform: translateX(-50%);
+    background-color: red;
+   transform-origin: bottom;
+   z-index: 4;
 }
 
 #minute_hand{
-    width: 45%;
-    margin-left: 5%;
-    height: 0.15rem;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 0.15rem;
+    height: 40%;
+    transform: translateX(-50%);
     background-color: black;
-    margin-top: 48%;
-    /* position: absolute;
-    z-index: 3; */
-    /* transform: rotate(90deg); */
-    transform-origin: 100% 50%;
-
+   transform-origin: bottom;
+   z-index: 10;
 }
 
 
+.inner_circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top : 50%;
+    z-index: 11;
+    transform: translate(-50%, -50%);
+}
+
+
+.number {
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    position: absolute;
+    top : 0;
+    font-size: 1.5rem;
+
+}
+
+.num1{
+    transform: rotate(30deg);
+}
+.num2{
+    transform: rotate(60deg);
+}
+.num3{
+    transform: rotate(90deg);
+}
+.num4{
+    transform: rotate(120deg);
+}
+.num5{
+    transform: rotate(150deg);
+}
+.num6{
+    transform: rotate(180deg);
+}
+.num7{
+    transform: rotate(210deg);
+}
+.num8{
+    transform: rotate(240deg);
+}
+.num9{
+    transform: rotate(270deg);
+}
+.num10{
+    transform: rotate(300deg);
+}
+.num11{
+    transform: rotate(330deg);
+}
