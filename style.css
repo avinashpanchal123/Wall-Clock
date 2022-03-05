@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+.clock_div {
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid wheat;
+    background-color: white;
+    margin: 10vh auto;
+    border-radius: 50%;
+    position: relative;
+    /* padding-top: 48%; */
+}
+
+#hour_hand{
+    width: 45%;
+    margin-left: 5%;
+    height: 0.3rem;
+    background-color: red;
+    position: absolute;
+    top: 49%;
+}
+
+#minute_hand{
+    width: 45%;
+    margin-left: 5%;
+    height: 0.15rem;
+    background-color: black;
+    margin-top: 48%;
+    /* position: absolute;
+    z-index: 3; */
+    /* transform: rotate(90deg); */
+    transform-origin: 100% 50%;
+
+}
+
+
